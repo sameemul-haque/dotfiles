@@ -1,0 +1,4 @@
+# dotfiles
+- Hyprland
+- Waybar
+- rofi
