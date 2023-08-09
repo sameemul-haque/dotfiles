@@ -1,0 +1,27 @@
+include atheme
+
+set adjust-open "best-fit"
+
+set adjust-open width
+
+
+set recolor false
+set sandbox none
+set selection-clipboard clipboard
+set statusbar-h-padding 0
+set statusbar-v-padding 0
+set page-padding 1
+map u scroll half-up
+map d scroll half-down
+map T toggle_page_mode
+map J scroll full-down
+map K scroll full-up
+map r reload
+map R rotate
+map A zoom in
+map D zoom out
+map i recolor
+map p print
+set font                        "Jetbrains Mono 9"
+#prime one
+map b toggle_statusbar

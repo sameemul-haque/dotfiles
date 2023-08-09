@@ -1,0 +1,37 @@
+daemonize
+show-failed-attempts
+clock
+screenshot
+effect-blur=15x15
+effect-vignette=1:1
+color=1f1d2e80
+font="Inter"
+indicator
+indicator-radius=200
+indicator-thickness=20
+line-color=1f1d2e
+ring-color=191724
+inside-color=1f1d2e
+key-hl-color=1793d1
+separator-color=00000000
+text-color=e0def4
+text-caps-lock-color=""
+line-ver-color=1793d1
+ring-ver-color=1793d1
+inside-ver-color=1f1d2e
+text-ver-color=e0def4
+ring-wrong-color=eb6f92
+text-wrong-color=eb6f92
+inside-wrong-color=1f1d2e
+inside-clear-color=1f1d2e
+text-clear-color=e0def4
+ring-clear-color=9ccfd8
+line-clear-color=1f1d2e
+line-wrong-color=1f1d2e
+bs-hl-color=eb6f92
+grace=0
+grace-no-touch
+datestr=%a, %B %e
+timestr=%I:%M %p
+fade-in=0.3
+ignore-empty-password

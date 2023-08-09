@@ -1,0 +1,112 @@
+{
+     "layer": "top",
+     "position": "top",
+     "margin-top": 5,
+     "margin-left": 10,
+     "margin-right": 10,
+    "height": 20,
+    "spacing": 0,
+    "modules-left": ["custom/launcher","wlr/workspaces"],
+    "modules-center": ["clock"],
+    "modules-right": ["cpu","memory","network", "pulseaudio","battery","custom/powermenu"],
+
+    "wlr/taskbar": {
+        "format": "{icon}",
+        "on-click": "activate",
+        "on-click-right": "fullscreen",
+        "icon-theme":"WhiteSur",
+        "icon-size": 25,
+        "tooltip-format": "{title}"
+    },
+
+    "wlr/workspaces": {
+        "on-click": "activate",
+        "format": "{icon}",
+        "format-icons": {
+            "default": "",
+            "1": "1",
+            "12": "2",
+            "13": "3",
+            "14": "4",
+            "15": "5",
+            "16": "6",
+            "17": "7",
+            "18": "8",
+            "19": "9",
+            "20": "10",
+            "active": "󱓻",
+            "urgent": "󱓻"
+	    },
+        "persistent_workspaces": {
+            "1" : [],
+            "12": [],
+            "13": [],
+            "14": [],
+            "15": []
+        }
+    },
+    "memory": {
+        "interval": 3,
+        "format": "   {}% ",
+        "max-length": 10
+        },
+        "cpu": {
+        "interval": 1,
+        "format": "   {}% ",
+        "max-length": 10
+        },
+        "tray": {
+            "spacing": 10
+        },
+    "clock": {
+        "tooltip-format": "<tt>{calendar}</tt>",
+        "format-alt": "   {:%a, %d %b %Y} ",
+	    "format": "   {:%I:%M %p} "
+    },
+    "network": {
+        "format-wifi": "{icon}",
+        "format-disconnected": "󰤭 ",
+        "format-icons": ["󰤯 ","󰤟 ","󰤢 ","󰤥 ","󰤨 "],
+        "tooltip-format-disconnected": "Disconnected",
+        "tooltip-format-wifi": "{icon} {essid}\n⇣{bandwidthDownBytes}  ⇡{bandwidthUpBytes}",
+	"nospacing": 1,        
+    "interval": 5
+    },
+    "pulseaudio": {
+        "format": "{icon}",
+        "nospacing": 1,
+        "tooltip-format": "Volume : {volume}%",
+        "format-muted": "󰝟 ",
+        "format-icons": {
+            "headphone": " ",
+            "default": ["󰕿 ", "󰖀 ", "󰕾 "]
+        },
+        "on-click": "pamixer -t",
+	"scroll-step": 1
+    },
+    "custom/launcher": {
+	"format": "  ",
+	"tooltip": false,
+	"on-click": "~/.config/rofi/launchers/misc/launcher.sh &"
+    },
+    "battery": {
+        "format": "{capacity}% {icon}",
+        "format-icons": {
+            "charging": ["󰢜","󰂆","󰂇","󰂈", "󰢝", "󰂉", "󰢞", "󰂊", "󰂋", "󰂅"],
+            "default": ["󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"]
+        },
+        "interval": 5,
+        "states": {
+            "warning": 25,
+            "critical": 10
+        },
+        "tooltip": false
+    },
+
+    "custom/powermenu": {
+	"format": "⏻ ",
+	"tooltip": false,
+	"on-click": "~/.config/rofi/powermenu/type-2/powermenu.sh &"
+    }
+}
+
