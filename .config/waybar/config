@@ -1,9 +1,9 @@
 {
-     "layer": "top",
-     "position": "top",
-     "margin-top": 5,
-     "margin-left": 10,
-     "margin-right": 10,
+    "layer": "top",
+    "position": "top",
+    "margin-top": 5,
+    "margin-left": 10,
+    "margin-right": 10,
     "height": 20,
     "spacing": 0,
     "modules-left": ["custom/launcher","wlr/workspaces"],
@@ -69,8 +69,10 @@
         "format-icons": ["󰤯 ","󰤟 ","󰤢 ","󰤥 ","󰤨 "],
         "tooltip-format-disconnected": "Disconnected",
         "tooltip-format-wifi": "{icon} {essid}\n⇣{bandwidthDownBytes}  ⇡{bandwidthUpBytes}",
-	"nospacing": 1,        
-    "interval": 5
+        "on-click": "~/.config/rofi/wifi/wifi.sh &",
+        "on-click-right": "~/.config/rofi/wifi/wifinew.sh &",
+        "nospacing": 1,        
+        "interval": 5
     },
     "pulseaudio": {
         "format": "{icon}",
@@ -82,12 +84,12 @@
             "default": ["󰕿 ", "󰖀 ", "󰕾 "]
         },
         "on-click": "pamixer -t",
-	"scroll-step": 1
+	    "scroll-step": 1
     },
     "custom/launcher": {
-	"format": "  ",
-	"tooltip": false,
-	"on-click": "~/.config/rofi/launchers/misc/launcher.sh &"
+        "format": "  ",
+        "tooltip": false,
+        "on-click": "~/.config/rofi/launchers/misc/launcher.sh &"
     },
     "battery": {
         "format": "{capacity}% {icon}",
@@ -104,9 +106,9 @@
     },
 
     "custom/powermenu": {
-	"format": "⏻ ",
-	"tooltip": false,
-	"on-click": "~/.config/rofi/powermenu/type-2/powermenu.sh &"
+        "format": "⏻ ",
+        "tooltip": false,
+        "on-click": "~/.config/rofi/powermenu/type-2/powermenu.sh &"
     }
 }
 

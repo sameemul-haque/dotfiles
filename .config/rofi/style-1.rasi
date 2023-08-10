@@ -11,15 +11,15 @@
 configuration {
 	modi:                       "drun";
     show-icons:                 true;
-    display-drun:               "";
     icon-theme: 				"WhiteSur";
+    display-drun:               "";
     display-run:                "";
     display-filebrowser:        "";
     display-window:             "";
     display-emoji:              "󰞅";
     display-clipboard:          "";
 	drun-display-format:        "{name}";
-	window-format:              "{t}";
+    window-format:              "{t}";
 }
 
 /*****----- Global Properties -----*****/
@@ -70,7 +70,7 @@ inputbar {
     border-color:                @selected;
     background-color:            @selected;
     text-color:                  @background;
-    children:                    [ "prompt", "entry" ];
+    children:                    ["prompt", "entry" ];
 }
 
 prompt {
