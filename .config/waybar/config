@@ -8,7 +8,7 @@
     "spacing": 0,
     "modules-left": ["custom/launcher","wlr/workspaces"],
     "modules-center": ["clock"],
-    "modules-right": ["cpu","memory","network", "pulseaudio","battery","custom/powermenu"],
+    "modules-right": ["memory","network", "pulseaudio","battery","custom/powermenu"],
 
     "wlr/taskbar": {
         "format": "{icon}",
