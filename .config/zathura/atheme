@@ -1,6 +1,6 @@
 
 set default-fg 			    "#d9e0ee"
-set default-bg 			    "#1e1d2f"
+set default-bg 			    "#ffffff"
 
 set completion-bg		    "#302d41"
 set completion-fg		    "#d9e0ee"
