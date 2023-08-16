@@ -8,7 +8,7 @@
     "spacing": 0,
     "modules-left": ["custom/launcher","wlr/workspaces"],
     "modules-center": ["clock"],
-    "modules-right": ["memory","network", "pulseaudio","battery","custom/powermenu"],
+    "modules-right": ["tray","memory","network", "pulseaudio","battery","custom/powermenu"],
 
     "wlr/taskbar": {
         "format": "{icon}",
@@ -49,14 +49,14 @@
         "format": "   {}% ",
         "max-length": 10
         },
-        "cpu": {
+    "cpu": {
         "interval": 1,
         "format": "   {}% ",
         "max-length": 10
-        },
-        "tray": {
-            "spacing": 10
-        },
+    },
+    "tray": {
+        "spacing": 10
+    },
     "clock": {
         "tooltip-format": "<tt>{calendar}</tt>",
         "format-alt": "   {:%a, %d %b %Y} ",

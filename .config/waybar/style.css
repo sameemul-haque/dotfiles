@@ -237,8 +237,8 @@ label:focus {
 
 #tray {
   margin-right: 10px;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
   font-size: 20px;
   border-radius: 8px 8px 8px 8px;
 }
