@@ -45,12 +45,12 @@
         }
     },
     "memory": {
-        "interval": 3,
+        "interval": 5,
         "format": "   {}% ",
         "max-length": 10
         },
     "cpu": {
-        "interval": 1,
+        "interval": 5,
         "format": "   {}% ",
         "max-length": 10
     },
@@ -70,6 +70,8 @@
         "tooltip-format-wifi": "{icon} {essid}\n⇣{bandwidthDownBytes}  ⇡{bandwidthUpBytes}",
         "on-click": "~/.config/rofi/wifi/wifi.sh &",
         "on-click-right": "~/.config/rofi/wifi/wifinew.sh &",
+        "format-ethernet": "󰀂",
+        "tooltip-format-ethernet": "󰀂  {ifname}\n⇣{bandwidthDownBytes}  ⇡{bandwidthUpBytes}",
         "nospacing": 1,        
         "interval": 5
     },
