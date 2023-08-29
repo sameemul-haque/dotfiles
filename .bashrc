@@ -17,6 +17,10 @@ export CDPATH=".:$HOME:$HOME/.config/:$HOME/.local/:$HOME/.local/share/:$HOME/.l
 export LIBVIRT_DEFAULT_URI='qemu:///system'
 export CSCOPE_EDITOR="vim"
 
+alias ls='ls --color=auto'
+alias ll='ls -alh --color=auto'
+alias grep='grep --color=auto'
+
 ###---------- SHELL OPTIONS -------###
 
 #neofetch
