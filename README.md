@@ -11,6 +11,4 @@
 - [Dunst](https://github.com/dunst-project/dunst)
 - [Cliphist](https://github.com/sentriz/cliphist)
 
-
-https://github.com/sameemul-haque/dotfiles/assets/110324374/3ff5cb21-6673-4bc5-a5f4-3b366826425c
-
+https://github.com/sameemul-haque/dotfiles/assets/110324374/caee9cb2-147e-48f0-8b81-60ac5f252847
