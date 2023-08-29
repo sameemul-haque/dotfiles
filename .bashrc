@@ -20,6 +20,7 @@ export CSCOPE_EDITOR="vim"
 alias ls='ls --color=auto'
 alias ll='ls -alh --color=auto'
 alias grep='grep --color=auto'
+alias neofetch='neofetch --ascii ~/.config/neofetch/arch'
 
 ###---------- SHELL OPTIONS -------###
 
