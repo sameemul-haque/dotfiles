@@ -16,7 +16,7 @@ export FZF_DEFAULT_COMMAND='ag --hidden --ignore .git -g ""'
 export CDPATH=".:$HOME:$HOME/.config/:$HOME/.local/:$HOME/.local/share/:$HOME/.local/programs"
 export LIBVIRT_DEFAULT_URI='qemu:///system'
 export CSCOPE_EDITOR="vim"
-
+eval $(dircolors ~/.dir_colors)
 alias ls='ls --color=auto'
 alias ll='ls -alh --color=auto'
 alias grep='grep --color=auto'
