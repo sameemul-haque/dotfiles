@@ -22,3 +22,4 @@ set echo-control-characters off
 
 # Bash Keybindings
 "\C-f":"cd ~/.config/"
+"\C-g":"cd ~/github-projects"

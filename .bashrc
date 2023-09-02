@@ -4,57 +4,25 @@ case $- in
   *i*) ;;
     *) return;;
 esac
+
 #####---------- EXPORTS ----------###
+
 export BROWSER="firefox"
 export EDITOR="vim"
 export VISUAL="vim"
-export MYVIMRC="$HOME/vim/.vimrc"
-export VIMINIT="source $MYVIMRC"
 export LESSHISTFILE=-
 export HISTFILE="$HOME/.bash_history"
 export FZF_DEFAULT_COMMAND='ag --hidden --ignore .git -g ""'
 export CDPATH=".:$HOME:$HOME/.config/:$HOME/.local/:$HOME/.local/share/:$HOME/.local/programs"
 export LIBVIRT_DEFAULT_URI='qemu:///system'
 export CSCOPE_EDITOR="vim"
+
 eval $(dircolors ~/.dir_colors)
+
 alias ls='ls --color=auto'
 alias ll='ls -alh --color=auto'
 alias grep='grep --color=auto'
 alias neofetch='neofetch --ascii ~/.config/neofetch/arch'
-
-###---------- SHELL OPTIONS -------###
-
-#neofetch
-###---------- DECORATION ----------###
-#logo
-#case "$TERM" in
-    #kitty)
-        #kitty #+kitten icat --align left $HOME/Media/Pictures/logo.gif
-        #printf "< "$(echo $DESKTOP_SESSION | cut -d '/' -f 5)" SYS INFO >\n\n" | tr '[:lower:]' '[:upper:]'
-        #printf "\e[1;37m|-------------------------------------------------------------------------|\n\n"
-        #cat $HOME/.local/share/sysinfo.txt; printf "\n\n"
-        #printf "|-------------------------------------------------------------------------|\n\n"
-        #;;
-#    st-256color)
-#        pfetch
-#        ;;
-#    alacritty)
-#        neofetch
-#        ;;
-#esac
-
-#printf " SYSTEM INFO ]"
-#printf "\n\n"
-#cat $HOME/.local/share/sysinfo.txt; printf "\n\n"
-
-###----------------- CD COMM ------------------------###
-
-#cd() {
-#    [[ $# -eq 0 ]] && return
-#    builtin cd "$@" || exit 
-#}
-
-alias lsp="lsd -a | fzfimg.sh --preview-window=bottom:75%"
 
 ###------------------- PROMPT -----------------------###
 
@@ -129,11 +97,3 @@ export LESS_TERMCAP_so=$'\e[01;34m'
 export LESS_TERMCAP_ue=$'\e[0m'
 export LESS_TERMCAP_us=$'\e[1;4;34m'
 
-#eval "$(zoxide init bash)"
-
-# BEGIN_KITTY_SHELL_INTEGRATION
-# if test -n "$KITTY_INSTALLATION_DIR" -a -e "$KITTY_INSTALLATION_DIR/shell-integration/bash/kitty.bash"; then source "$KITTY_INSTALLATION_DIR/shell-integration/bash/kitty.bash"; fi
-# END_KITTY_SHELL_INTEGRATION
-
-# Generated for envman. Do not edit.
-# [ -s "$HOME/.config/envman/load.sh" ] && source "$HOME/.config/envman/load.sh"
