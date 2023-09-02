@@ -265,7 +265,7 @@
 
     # Uncomment this if you want to let notications appear under fullscreen
     # applications (default: overlay)
-    layer = top
+    # layer = top
 
     # Set this to true to use X11 output on Wayland.
     force_xwayland = false
