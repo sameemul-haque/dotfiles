@@ -6,19 +6,29 @@
     "margin-right": 10,
     "height": 20,
     "spacing": 0,
-    "modules-left": ["custom/launcher","wlr/workspaces"],
-    "modules-center": ["clock"],
-    "modules-right": ["tray","memory","network", "pulseaudio","battery","custom/powermenu"],
-
+    "modules-left": [
+        "custom/launcher",
+        "wlr/workspaces"
+    ],
+    "modules-center": [
+        "clock"
+    ],
+    "modules-right": [
+        "tray",
+        "memory",
+        "network",
+        "pulseaudio",
+        "battery",
+        "custom/powermenu"
+    ],
     "wlr/taskbar": {
         "format": "{icon}",
         "on-click": "activate",
         "on-click-right": "fullscreen",
-        "icon-theme":"WhiteSur",
+        "icon-theme": "WhiteSur",
         "icon-size": 25,
         "tooltip-format": "{title}"
     },
-
     "wlr/workspaces": {
         "on-click": "activate",
         "format": "{icon}",
@@ -35,9 +45,9 @@
             "9": "9",
             "active": "󱓻",
             "urgent": "󱓻"
-	    },
+        },
         "persistent_workspaces": {
-            "1" : [],
+            "1": [],
             "2": [],
             "3": [],
             "4": [],
@@ -48,7 +58,7 @@
         "interval": 5,
         "format": "   {}% ",
         "max-length": 10
-        },
+    },
     "cpu": {
         "interval": 5,
         "format": "   {}% ",
@@ -60,32 +70,43 @@
     "clock": {
         "tooltip-format": "<tt>{calendar}</tt>",
         "format-alt": "   {:%a, %d %b %Y} ",
-	    "format": "   {:%I:%M %p} "
+        "format": "   {:%I:%M %p} "
     },
     "network": {
         "format-wifi": "{icon}",
         "format-disconnected": "󰤭 ",
-        "format-icons": ["󰤯 ","󰤟 ","󰤢 ","󰤥 ","󰤨 "],
+        "format-icons": [
+            "󰤯 ",
+            "󰤟 ",
+            "󰤢 ",
+            "󰤥 ",
+            "󰤨 "
+        ],
         "tooltip-format-disconnected": "Disconnected",
         "tooltip-format-wifi": "{icon} {essid}\n⇣{bandwidthDownBytes}  ⇡{bandwidthUpBytes}",
         "on-click": "~/.config/rofi/wifi/wifi.sh &",
         "on-click-right": "~/.config/rofi/wifi/wifinew.sh &",
         "format-ethernet": "󰀂",
         "tooltip-format-ethernet": "󰀂  {ifname}\n⇣{bandwidthDownBytes}  ⇡{bandwidthUpBytes}",
-        "nospacing": 1,        
+        "nospacing": 1,
         "interval": 5
     },
     "pulseaudio": {
         "format": "{icon}",
+        "format-bluetooth": "󰂰 ",
         "nospacing": 1,
         "tooltip-format": "Volume : {volume}%",
         "format-muted": "󰝟 ",
         "format-icons": {
             "headphone": " ",
-            "default": ["󰕿 ", "󰖀 ", "󰕾 "]
+            "default": [
+                "󰕿 ",
+                "󰖀 ",
+                "󰕾 "
+            ]
         },
         "on-click": "pamixer -t",
-	    "scroll-step": 1
+        "scroll-step": 1
     },
     "custom/launcher": {
         "format": "  ",
@@ -95,8 +116,30 @@
     "battery": {
         "format": "{capacity}% {icon}",
         "format-icons": {
-            "charging": ["󰢜","󰂆","󰂇","󰂈", "󰢝", "󰂉", "󰢞", "󰂊", "󰂋", "󰂅"],
-            "default": ["󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"]
+            "charging": [
+                "󰢜",
+                "󰂆",
+                "󰂇",
+                "󰂈",
+                "󰢝",
+                "󰂉",
+                "󰢞",
+                "󰂊",
+                "󰂋",
+                "󰂅"
+            ],
+            "default": [
+                "󰁺",
+                "󰁻",
+                "󰁼",
+                "󰁽",
+                "󰁾",
+                "󰁿",
+                "󰂀",
+                "󰂁",
+                "󰂂",
+                "󰁹"
+            ]
         },
         "interval": 5,
         "states": {
@@ -105,11 +148,9 @@
         },
         "tooltip": false
     },
-
     "custom/powermenu": {
         "format": "⏻ ",
         "tooltip": false,
         "on-click": "~/.config/rofi/powermenu/type-2/powermenu.sh &"
     }
 }
-
