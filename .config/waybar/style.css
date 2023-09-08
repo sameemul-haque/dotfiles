@@ -1,5 +1,5 @@
 * {
-  font-family: Material Design Icons,  JetBrainsMono Nerd Font;
+  font-family: Material Design Icons, JetBrainsMono Nerd Font;
   font-size: 10px;
 }
 
@@ -21,9 +21,10 @@ window#waybar.hidden {
 #tray,
 #mode,
 #custom-lock,
-#idle_inhibitor{
+#idle_inhibitor {
   border-radius: 8px 8px 8px 8px;
 }
+
 #cpu {
   color: #6c71c4;
   border-radius: 8px 8px 8px 8px;
@@ -33,41 +34,48 @@ window#waybar.hidden {
   color: #2aa198;
   border-radius: 8px 8px 8px 8px;
 }
+
 #memory,
 #cpu {
   font-size: 16px;
 }
 
 @keyframes button_activate {
-	from { opacity: .3 }
-	to { opacity: 1.; }
+  from {
+    opacity: .3
+  }
+
+  to {
+    opacity: 1.;
+  }
 }
 
 #workspaces button {
-	border: none;
-	color:  #268bd2;
+  border: none;
+  color: #268bd2;
   font-weight: bolder;
-	padding: 3px;
-	background: transparent;
-	box-shadow: none;
+  padding: 3px;
+  background: transparent;
+  box-shadow: none;
 }
 
 #workspaces button.active {
-	color:  #268bd2;
-	animation: button_activate .2s ease-in-out;
+  color: #268bd2;
+  animation: button_activate .2s ease-in-out;
 }
 
 #workspaces button.urgent {
-	color:  #ff8873;	
-	background: radial-gradient(circle, rgba(25, 79, 255, 0.3) 20%, rgba(132,129,156,0) 30%);
+  color: #ff8873;
+  background: radial-gradient(circle, rgba(25, 79, 255, 0.3) 20%, rgba(132, 129, 156, 0) 30%);
 }
 
 #workspaces button.persistent {
-	color:  #a9ac88;
+  color: #a9ac88;
 }
 
-#workspaces button.active:hover, #workspaces button.urgent:hover {
-	background: inherit;
+#workspaces button.active:hover,
+#workspaces button.urgent:hover {
+  background: inherit;
 }
 
 
@@ -175,7 +183,7 @@ window#waybar.hidden {
   font-size: 14px;
 }
 
-#battery.charging { 
+#battery.charging {
   color: #87bb82;
   font-size: 14px;
   padding-right: 13px;
@@ -213,7 +221,7 @@ window#waybar.hidden {
 
 #clock {
   color: #ffffff;
-  font-family:  JetBrainsMono Nerd Font;
+  font-family: JetBrainsMono Nerd Font;
   font-size: 12px;
   font-weight: bolder;
   margin-right: 10px;
@@ -243,11 +251,11 @@ label:focus {
   border-radius: 8px 8px 8px 8px;
 }
 
-#tray > .passive {
+#tray>.passive {
   -gtk-icon-effect: dim;
 }
 
-#tray > .needs-attention {
+#tray>.needs-attention {
   -gtk-icon-effect: highlight;
   background-color: #eb4d4b;
 }
@@ -260,5 +268,3 @@ label:focus {
   background-color: #ecf0f1;
   color: #2d3436;
 }
-
-

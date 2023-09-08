@@ -8,7 +8,7 @@
     "spacing": 0,
     "modules-left": [
         "custom/launcher",
-        "wlr/workspaces"
+        "hyprland/workspaces"
     ],
     "modules-center": [
         "clock"
@@ -29,7 +29,7 @@
         "icon-size": 25,
         "tooltip-format": "{title}"
     },
-    "wlr/workspaces": {
+    "hyprland/workspaces": {
         "on-click": "activate",
         "format": "{icon}",
         "format-icons": {
