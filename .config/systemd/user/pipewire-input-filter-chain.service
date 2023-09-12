@@ -1,0 +1,13 @@
+[Unit]
+Description=PipeWire Input Filter Chain
+After=pipewire.service
+BindsTo=pipewire.service
+
+[Service]
+ExecStart=/usr/bin/pipewire -c /home/sam/.config/pipewire/input-filter-chain.conf
+Type=simple
+Restart=on-failure
+
+[Install]
+WantedBy=pipewire.service
+
