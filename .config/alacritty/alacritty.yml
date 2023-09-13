@@ -26,7 +26,7 @@ font:
     y: 0
 colors:
     primary:
-        background: "#040404" # base
+        background: "#1E1E2E" # base
         foreground: "#CDD6F4" # text
         # Bright and dim foreground colors
         dim_foreground: "#CDD6F4" # text

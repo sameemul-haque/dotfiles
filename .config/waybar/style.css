@@ -1,232 +1,129 @@
-* {
-  font-family: Material Design Icons, JetBrainsMono Nerd Font;
-  font-size: 10px;
-}
-
-window#waybar {
-  background-color: transparent;
-  color: #ffffff;
-
-}
-
-window#waybar.hidden {
-  opacity: 0.1;
-}
-
-#window {
-  color: #64727d;
-}
-
-#clock,
-#tray,
-#mode,
-#custom-lock,
-#idle_inhibitor {
-  border-radius: 8px 8px 8px 8px;
-}
-
-#cpu {
-  color: #6c71c4;
-  border-radius: 8px 8px 8px 8px;
-}
-
-#memory {
-  color: #2aa198;
-  border-radius: 8px 8px 8px 8px;
-}
-
-#memory,
-#cpu {
-  font-size: 16px;
-}
-
-@keyframes button_activate {
-  from {
-    opacity: .3
+  * {
+    border: none;
+    border-radius: 0;
+    min-height: 0;
+    font-family: Material Design Icons, JetBrainsMono Nerd Font;
+    font-size: 13px;
   }
 
-  to {
-    opacity: 1.;
+  window#waybar {
+    background-color: #181825;
+    transition-property: background-color;
+    transition-duration: 0.5s;
   }
-}
 
-#workspaces button {
-  border: none;
-  color: #268bd2;
-  font-weight: bolder;
-  padding: 3px;
-  background: transparent;
-  box-shadow: none;
-}
-
-#workspaces button.active {
-  color: #268bd2;
-  animation: button_activate .2s ease-in-out;
-}
-
-#workspaces button.urgent {
-  color: #ff8873;
-  background: radial-gradient(circle, rgba(25, 79, 255, 0.3) 20%, rgba(132, 129, 156, 0) 30%);
-}
-
-#workspaces button.persistent {
-  color: #a9ac88;
-}
-
-#workspaces button.active:hover,
-#workspaces button.urgent:hover {
-  background: inherit;
-}
-
-
-
-#workspaces,
-#custom-ibus,
-#clock,
-#backlight,
-#battery,
-#cpu,
-#memory,
-#pulseaudio,
-#custom-launcher,
-#custom-powermenu,
-#tray,
-#network {
-  background-color: #040404;
-  padding: 0em 2em;
-  padding-left: 7.5px;
-  padding-right: 7.5px;
-  padding-top: 2px;
-  padding-bottom: 2px;
-  margin-top: 5px;
-  margin-bottom: 0px;
-  margin-right: 10px;
-  font-size: 13px;
-}
-
-#workspaces {
-  padding-right: 10px;
-  border-radius: 0px 8px 8px 0px;
-  margin-left: -10px;
-}
-
-#custom-launcher {
-  padding-right: 7px;
-  padding-left: 7px;
-  margin-left: 5px;
-  font-size: 15px;
-  border-radius: 8px 0px 0px 8px;
-  color: #1793d1;
-}
-
-#pulseaudio {
-  color: #268bd2;
-  padding-left: 10px;
-  margin-right: 10px;
-  font-size: 15px;
-  border-radius: 6px 8px 8px 6px;
-  margin-left: -5px;
-}
-
-#pulseaudio.muted {
-  color: #fb958b;
-  padding-left: 10px;
-  font-size: 15px;
-  border-radius: 6px 8px 8px 6px;
-}
-
-#backlight {
-  color: #8a909e;
-  padding-right: 5px;
-  padding-left: 8px;
-  font-size: 15px;
-}
-
-#network {
-  padding-left: 0.2em;
-  color: #268bd2;
-  border-radius: 8px 6px 6px 8px;
-  padding-left: 12px;
-  padding-right: 14px;
-  font-size: 15px;
-  margin-right: -5px;
-}
-
-#network.disconnected {
-  color: #fb958b;
-}
-
-#custom-powermenu {
-  color: #e78284;
-  margin-left: -12px;
-  margin-right: 5px;
-  padding-left: 12px;
-  padding-right: 12px;
-  border-radius: 0px 8px 8px 0px;
-}
-
-#battery {
-  color: #8fbcbb;
-  border-radius: 8px 0px 0px 8px;
-  padding-right: 8px;
-  padding-left: 12px;
-  font-size: 14px;
-}
-
-#battery.critical,
-#battery.warning,
-#battery.full,
-#battery.plugged {
-  color: #91ffc3;
-  padding-left: 6px;
-  padding-right: 12px;
-  font-size: 14px;
-}
-
-#battery.charging {
-  color: #87bb82;
-  font-size: 14px;
-  padding-right: 13px;
-  padding-left: 8px;
-}
-
-#battery.full,
-#battery.plugged {
-  font-size: 14px;
-  padding-right: 10px;
-}
-
-@keyframes blink {
-  to {
-    background-color: rgba(30, 34, 42, 0.5);
-    color: #abb2bf;
+  window#waybar.hidden {
+    opacity: 0.5;
   }
-}
 
-#battery.warning {
-  color: #ecd3a0;
-}
+  #workspaces {
+    background-color: transparent;
+  }
 
-#battery.critical:not(.charging) {
-  color: #fb958b;
-}
+  #workspaces button {
+    all: initial; /* Remove GTK theme values (waybar #1351) */
+    min-width: 0; /* Fix weird spacing in materia (waybar #450) */
+    box-shadow: inset 0 -3px transparent; /* Use box-shadow instead of border so the text isn't offset */
+    padding: 6px 18px;
+    margin: 6px 3px;
+    border-radius: 4px;
+    background-color: #1e1e2e;
+    color: #cdd6f4;
+  }
 
-#custom-lock {
-  color: #ecd3a0;
-  padding: 0 15px 0 15px;
-  margin-left: 7px;
-  margin-top: 7px;
-  margin-bottom: 7px;
-}
+  #workspaces button.active {
+    color: #1e1e2e;
+    background-color: #cdd6f4;
+  }
 
-#clock {
-  color: #ffffff;
-  font-family: JetBrainsMono Nerd Font;
-  font-size: 12px;
-  font-weight: bolder;
-  margin-right: 10px;
-  border-radius: 8px;
-}
+  #workspaces button:hover {
+   box-shadow: inherit;
+   text-shadow: inherit;
+   color: #1e1e2e;
+   background-color: #cdd6f4;
+  }
+
+  #workspaces button.urgent {
+    background-color: #f38ba8;
+  }
+
+  #memory,
+  #custom-power,
+  #battery,
+  #backlight,
+  #pulseaudio,
+  #network,
+  #clock,
+  #tray {
+    border-radius: 4px;
+    margin: 6px 3px;
+    padding: 6px 12px;
+    background-color: #1e1e2e;
+    color: #181825;
+  }
+
+  #custom-power {
+    margin-right: 6px;
+  }
+
+  #custom-logo {
+    padding-right: 7px;
+    padding-left: 7px;
+    margin-left: 5px;
+    font-size: 15px;
+    border-radius: 8px 0px 0px 8px;
+    color: #1793d1;
+  }
+
+  #memory {
+    background-color: #fab387;
+  }
+  #battery {
+    background-color: #f38ba8;
+  }
+
+  @keyframes blink {
+    to {
+      background-color: #f38ba8;
+      color: #181825;
+    }
+  }
+
+  .warning,
+  .critical,
+  .urgent,
+  #battery.critical:not(.charging) {
+    background-color: #f38ba8;
+    color: #181825;
+    animation-name: blink;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+
+  #backlight {
+    background-color: #fab387;
+  }
+
+  #pulseaudio {
+    background-color: #a6e3a1;
+  }
+
+  #network {
+    background-color: #94e2d5;
+    padding-right: 17px;
+  }
+
+  #clock {
+    font-family: JetBrainsMono Nerd Font;
+    background-color: #cba6f7;
+  }
+
+  #custom-power {
+    background-color: #f2cdcd;
+  }
+
 
 tooltip {
   border-radius: 8px;
@@ -237,34 +134,4 @@ tooltip {
 tooltip label {
   padding: 5px;
   background-color: #131822;
-}
-
-label:focus {
-  background-color: #131822;
-}
-
-#tray {
-  margin-right: 10px;
-  padding-left: 10px;
-  padding-right: 10px;
-  font-size: 20px;
-  border-radius: 8px 8px 8px 8px;
-}
-
-#tray>.passive {
-  -gtk-icon-effect: dim;
-}
-
-#tray>.needs-attention {
-  -gtk-icon-effect: highlight;
-  background-color: #eb4d4b;
-}
-
-#idle_inhibitor {
-  background-color: #131822;
-}
-
-#idle_inhibitor.activated {
-  background-color: #ecf0f1;
-  color: #2d3436;
 }

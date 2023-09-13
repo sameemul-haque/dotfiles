@@ -105,7 +105,7 @@ require('lazy').setup({
 
   {
     -- Theme inspired by Atom
-    -- Change color in .local/share/nvim/lazy/onedark.nvim/lua/onedark/palette.lua dark bg0 -> #040404
+    -- Change color in .local/share/nvim/lazy/onedark.nvim/lua/onedark/palette.lua dark bg0 -> #1e1e2e
     'navarasu/onedark.nvim',
     priority = 1000,
     config = function()

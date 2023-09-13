@@ -1,13 +1,10 @@
 {
     "layer": "top",
     "position": "top",
-    "margin-top": 5,
-    "margin-left": 10,
-    "margin-right": 10,
-    "height": 20,
     "spacing": 0,
+    "height": 34,
     "modules-left": [
-        "custom/launcher",
+        "custom/logo",
         "hyprland/workspaces"
     ],
     "modules-center": [
@@ -19,7 +16,7 @@
         "network",
         "pulseaudio",
         "battery",
-        "custom/powermenu"
+        "custom/power"
     ],
     "wlr/taskbar": {
         "format": "{icon}",
@@ -56,12 +53,7 @@
     },
     "memory": {
         "interval": 5,
-        "format": "   {}% ",
-        "max-length": 10
-    },
-    "cpu": {
-        "interval": 5,
-        "format": "   {}% ",
+        "format": "󰍛 {}%",
         "max-length": 10
     },
     "tray": {
@@ -69,46 +61,37 @@
     },
     "clock": {
         "tooltip-format": "<tt>{calendar}</tt>",
-        "format-alt": "   {:%a, %d %b %Y} ",
-        "format": "   {:%I:%M %p} "
+        "format-alt": "  {:%a, %d %b %Y}",
+        "format": "  {:%I:%M %p}"
     },
     "network": {
-        "format-wifi": "{icon}",
-        "format-disconnected": "󰤭 ",
-        "format-icons": [
-            "󰤯 ",
-            "󰤟 ",
-            "󰤢 ",
-            "󰤥 ",
-            "󰤨 "
-        ],
-        "tooltip-format-disconnected": "Disconnected",
-        "tooltip-format-wifi": "{icon} {essid}\n⇣{bandwidthDownBytes}  ⇡{bandwidthUpBytes}",
-        "on-click": "~/.config/rofi/wifi/wifi.sh &",
-        "on-click-right": "~/.config/rofi/wifi/wifinew.sh &",
+        "format-wifi" : "{icon}",
+        "format-icons": ["󰤯","󰤟","󰤢","󰤥","󰤨"],
         "format-ethernet": "󰀂",
+	"format-alt" : "󱛇 ",
+        "format-disconnected" : "󰖪 ",
+	"tooltip-format-wifi": "{icon} {essid}\n⇣{bandwidthDownBytes}  ⇡{bandwidthUpBytes}",
         "tooltip-format-ethernet": "󰀂  {ifname}\n⇣{bandwidthDownBytes}  ⇡{bandwidthUpBytes}",
-        "nospacing": 1,
-        "interval": 5
+	"tooltip-format-disconnected": "Disconnected",
+	"on-click": "~/.config/rofi/wifi/wifi.sh &",
+        "on-click-right": "~/.config/rofi/wifi/wifinew.sh &",
+	"interval": 5,
+	"nospacing": 1,
     },
     "pulseaudio": {
         "format": "{icon}",
-        "format-bluetooth": "󰂰 ",
+        "format-bluetooth": "󰂰",
         "nospacing": 1,
         "tooltip-format": "Volume : {volume}%",
-        "format-muted": "󰝟 ",
+        "format-muted": "󰝟",
         "format-icons": {
-            "headphone": " ",
-            "default": [
-                "󰕿 ",
-                "󰖀 ",
-                "󰕾 "
-            ]
+            "headphone": "",
+            "default": ["󰖀","󰕾",""]
         },
         "on-click": "pamixer -t",
         "scroll-step": 1
     },
-    "custom/launcher": {
+    "custom/logo": {
         "format": "  ",
         "tooltip": false,
         "on-click": "~/.config/rofi/launchers/misc/launcher.sh &"
@@ -148,8 +131,8 @@
         },
         "tooltip": false
     },
-    "custom/powermenu": {
-        "format": "⏻ ",
+    "custom/power": {
+        "format": "󰤆",
         "tooltip": false,
         "on-click": "~/.config/rofi/powermenu/type-2/powermenu.sh &"
     }
