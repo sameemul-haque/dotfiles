@@ -1,5 +1,5 @@
 # dotfiles
-
+- [old-config](https://github.com/sameemul-haque/dotfiles/tree/old)
 - [Hyprland](https://hyprland.org/)   
 - [Waybar](https://github.com/Alexays/Waybar)     
 - [Bash](https://www.gnu.org/software/bash/manual/bash.html)       
@@ -11,4 +11,6 @@
 - [Dunst](https://github.com/dunst-project/dunst)
 - [Cliphist](https://github.com/sentriz/cliphist)
 
-https://github.com/sameemul-haque/dotfiles/assets/110324374/caee9cb2-147e-48f0-8b81-60ac5f252847
+![yuki](https://github.com/sameemul-haque/dotfiles/assets/110324374/71f529ac-93e0-4476-b352-2112c83d54e1)
+
+[![credits](https://img.shields.io/badge/rayh4444n-FF4500?style=for-the-badge&logo=reddit&logoColor=ffffff "Credits to rayh4444n")](https://www.reddit.com/r/unixporn/comments/zos11o/hyprland_mocha/)
