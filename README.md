@@ -1,5 +1,5 @@
 # dotfiles
-
+- [new-config -> mocha](https://github.com/sameemul-haque/dotfiles/)
 - [Hyprland](https://hyprland.org/)   
 - [Waybar](https://github.com/Alexays/Waybar)     
 - [Bash](https://www.gnu.org/software/bash/manual/bash.html)       
@@ -11,4 +11,4 @@
 - [Dunst](https://github.com/dunst-project/dunst)
 - [Cliphist](https://github.com/sentriz/cliphist)
 
-https://github.com/sameemul-haque/dotfiles/assets/110324374/caee9cb2-147e-48f0-8b81-60ac5f252847
+![preview](https://github.com/sameemul-haque/dotfiles/assets/110324374/6c560b8a-7ad8-4e4a-a971-96f6f569161d)
