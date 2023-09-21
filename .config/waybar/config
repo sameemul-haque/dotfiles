@@ -124,9 +124,10 @@
                 "󰁹"
             ]
         },
+        "format-full": "Charged ",
         "interval": 5,
         "states": {
-            "warning": 25,
+            "warning": 20,
             "critical": 10
         },
         "tooltip": false
