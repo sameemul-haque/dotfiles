@@ -1,5 +1,5 @@
 # dotfiles
-[![mocha](https://img.shields.io/badge/new--config_%20_mocha-blue?style=for-the-badge "New config - Mocha")](https://github.com/sameemul-haque/dotfiles)
+[![mocha](https://img.shields.io/badge/mocha_%20_config-blue?style=for-the-badge "Mocha config")](https://github.com/sameemul-haque/dotfiles/tree/mocha)
 
 [![Hyprland](https://img.shields.io/badge/Hyprland-abd6fd?style=for-the-badge "Hyprland - A dynamic tiling Wayland compositor based on wlroots that doesn't sacrifice on its looks")](https://hyprland.org/)
 [![Waybar](https://img.shields.io/badge/Waybar-cdd6f4?style=for-the-badge "Waybar - Highly customizable Wayland bar for Sway and Wlroots based compositors")](https://github.com/Alexays/Waybar)
@@ -12,5 +12,6 @@
 [![Swaylock](https://img.shields.io/badge/Swaylock-f9e2af?style=for-the-badge "Swaylock - Screen locking utility for Wayland compositors")](https://github.com/mortie/swaylock-effects)
 [![Dunst](https://img.shields.io/badge/Dunst-fab387?style=for-the-badge "Dunst - Lightweight and customizable notification daemon")](https://github.com/dunst-project/dunst)
 
-<!---[![](https://img.shields.io/badge/?style=for-the-badge "")]()--->
+[preview](https://github.com/sameemul-haque/dotfiles/assets/110324374/3f3ad231-ba5c-42fc-9d01-6466e4550158 "dotfiles preview")
+
 ![preview](https://github.com/sameemul-haque/dotfiles/assets/110324374/6c560b8a-7ad8-4e4a-a971-96f6f569161d)
