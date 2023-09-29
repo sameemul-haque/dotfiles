@@ -14,4 +14,7 @@
 
 [preview](https://github.com/sameemul-haque/dotfiles/assets/110324374/3f3ad231-ba5c-42fc-9d01-6466e4550158 "dotfiles preview")
 
-![preview](https://github.com/sameemul-haque/dotfiles/assets/110324374/6c560b8a-7ad8-4e4a-a971-96f6f569161d)
+![preview1](https://github.com/sameemul-haque/dotfiles/assets/110324374/f0811a2f-9d1f-4694-80ea-a0b87db4ffe7)
+![preview2](https://github.com/sameemul-haque/dotfiles/assets/110324374/67fe273f-146b-41df-99b2-c1090f9b6ae3)
+![preview3](https://github.com/sameemul-haque/dotfiles/assets/110324374/9b71ef83-fee4-4a27-a29b-ef48ca7ecc43)
+![preview4](https://github.com/sameemul-haque/dotfiles/assets/110324374/4897fc68-b60f-4e2b-82ae-547970512830)
