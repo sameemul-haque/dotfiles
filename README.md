@@ -28,3 +28,11 @@
 
 ## Credits
 [![credits](https://img.shields.io/badge/rayh4444n-FF4500?style=for-the-badge&logo=reddit&logoColor=ffffff "Credits to rayh4444n")](https://www.reddit.com/r/unixporn/comments/zos11o/comment/k24i61c/)
+
+## Star History
+<picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=sameemul-haque/dotfiles&type=Date&theme=dark" />
+    <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=sameemul-haque/dotfiles&type=Date" />
+    <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=sameemul-haque/dotfiles&type=Date" />
+</picture>
+
