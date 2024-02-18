@@ -8,17 +8,18 @@ esac
 #####---------- EXPORTS ----------###
 
 export BROWSER="firefox"
-export EDITOR="vim"
-export VISUAL="vim"
+export EDITOR="nvim"
+export VISUAL="nvim"
 export LESSHISTFILE=-
 export HISTFILE="$HOME/.bash_history"
 export FZF_DEFAULT_COMMAND='ag --hidden --ignore .git -g ""'
 export CDPATH=".:$HOME:$HOME/.config/:$HOME/.local/:$HOME/.local/share/:$HOME/.local/programs"
 export LIBVIRT_DEFAULT_URI='qemu:///system'
-export CSCOPE_EDITOR="vim"
+export CSCOPE_EDITOR="nvim"
 
 eval $(dircolors ~/.dir_colors)
 
+alias vim=nvim
 alias ls='ls --color=auto'
 alias ll='ls -alh --color=auto'
 alias grep='grep --color=auto'
