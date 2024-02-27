@@ -23,7 +23,8 @@ alias vim=nvim
 alias ls='ls --color=auto'
 alias ll='ls -alh --color=auto'
 alias grep='grep --color=auto'
-alias neofetch='neofetch --ascii ~/.config/neofetch/arch'
+alias neofetch='fastfetch'
+alias fetch='fastfetch'
 
 ###------------------- PROMPT -----------------------###
 
