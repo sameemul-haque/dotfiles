@@ -17,13 +17,15 @@
 ## Preview
 [preview](https://github.com/sameemul-haque/dotfiles/assets/110324374/3f3ad231-ba5c-42fc-9d01-6466e4550158 "dotfiles preview")
 
-![preview1](https://github.com/sameemul-haque/dotfiles/assets/110324374/0250fcdc-dd46-4e53-9855-6630b02950fe)
+
+![preview1](https://github.com/sameemul-haque/dotfiles/assets/110324374/2212607f-9b29-4e76-bac0-4bdc0ac06bbb)
+<!-- ![preview1-old-neofetch](https://github.com/sameemul-haque/dotfiles/assets/110324374/0250fcdc-dd46-4e53-9855-6630b02950fe) -->
 ![preview2](https://github.com/sameemul-haque/dotfiles/assets/110324374/86560ae3-5113-46f2-823b-60e334c67b14)
 ![preview3](https://github.com/sameemul-haque/dotfiles/assets/110324374/4f7f18aa-4337-4f68-871b-42c3986c0379)
 ![preview4](https://github.com/sameemul-haque/dotfiles/assets/110324374/6614f84c-2bbe-42eb-83b4-a47d263fc9a3)
 
 ## Dotfiles are available for the following:
-| HYPRLAND | WAYBAR | ROFI | DUNST | SWAYLOCK | SDDM | ZATHURA | ALACRITTY | BASH | NEOVIM | FIREFOX | NEOFETCH |
+| HYPRLAND | WAYBAR | ROFI | DUNST | SWAYLOCK | SDDM | ZATHURA | ALACRITTY | BASH | NEOVIM | FIREFOX | FASTFETCH |
 |---|---|---|---|---|---|---|---|---|---|---|---|
 
 ## Credits
