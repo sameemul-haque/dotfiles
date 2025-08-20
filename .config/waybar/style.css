@@ -115,6 +115,15 @@ window#waybar.hidden {
   font-family: JetBrainsMono Nerd Font;
   background-color: #cba6f7;
 }
+.clock.24hr {
+    font-family: "JetBrainsMono Nerd Font";
+    background-color: #cba6f7;
+}
+.clock.12hr {
+    font-family: "JetBrainsMono Nerd Font";
+    background-color: #cba6f7;
+}
+
 
 #custom-power {
   background-color: #f2cdcd;
