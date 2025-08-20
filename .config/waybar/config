@@ -8,7 +8,7 @@
         "hyprland/workspaces"
     ],
     "modules-center": [
-        "clock"
+        "clock#12hr"
     ],
     "modules-right": [
         "tray",
@@ -59,10 +59,15 @@
     "tray": {
         "spacing": 10
     },
-    "clock": {
+    "clock#12hr": {
         "tooltip-format": "{calendar}",
         "format-alt": "  {:%a, %d %b %Y}",
         "format": "  {:%I:%M %p}"
+    },
+   "clock#24hr": {
+        "tooltip-format": "{calendar}",
+        "format-alt": "  {:%a, %d %b %Y}",
+        "format": "  {:%H:%M}"
     },
     "network": {
         "format-wifi" : "{icon}",
