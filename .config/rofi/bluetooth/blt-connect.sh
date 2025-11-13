@@ -59,11 +59,11 @@ scan_on() {
 # Toggles scanning state
 toggle_scan() {
     if scan_on; then
-        kill $(pgrep -f "bluetoothctl scan on")
+        kill $(pgrep -f "bluetoothctl --timeout 5 scan on")
         bluetoothctl scan off
         show_menu
     else
-        bluetoothctl scan on &
+        bluetoothctl --timeout 5 scan on
         echo "Scanning..."
         sleep 5
         show_menu
